@@ -31,6 +31,6 @@
 *.out
 *.app
 
-*adding node modules
+#adding node modules
 node_modules/
 .parcel-cache/
