@@ -2485,7 +2485,7 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"cv8s3":[function(require,module,exports,__globalThis) {
+},{}],"dIizP":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -2951,6 +2951,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _restaurants = require("./Constants/Restaurants");
+var _restaurantsDefault = parcelHelpers.interopDefault(_restaurants);
 // Write your React code here
 // Render the element into the root div
 const RenderEle = ()=>{
@@ -2960,20 +2962,27 @@ const RenderEle = ()=>{
                 children: "This is the component trial"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "We can add many sub-headings as well"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 12,
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: (0, _restaurantsDefault.default)[0].price_range
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "index.js",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 5
     }, undefined);
 };
@@ -2981,7 +2990,7 @@ _c = RenderEle;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RenderEle, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 18,
+    lineNumber: 20,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -2992,7 +3001,7 @@ $RefreshReg$(_c, "RenderEle");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Constants/Restaurants":"jkTNI"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -18762,6 +18771,306 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}]},["aQL8O","cv8s3","bB7Pu"], "bB7Pu", "parcelRequire94c2")
+},{}],"jkTNI":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const Restaurants = [
+    {
+        restaurant_id: "1234",
+        restaurant_name: "The Spice House",
+        cuisine: [
+            "Indian",
+            "Chinese"
+        ],
+        rating: 4.5,
+        delivery_time: "30-40 minutes",
+        price_range: "\u20B9\u20B9",
+        address: "123, MG Road, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "1001",
+                item_name: "Paneer Butter Masala",
+                price: "\u20B9350",
+                description: "Delicious paneer cooked in rich, creamy gravy.",
+                available: true
+            },
+            {
+                item_id: "1002",
+                item_name: "Chicken Biryani",
+                price: "\u20B9400",
+                description: "Aromatic biryani made with tender chicken.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "5678",
+        restaurant_name: "Burger King",
+        cuisine: [
+            "Fast Food",
+            "American"
+        ],
+        rating: 4.0,
+        delivery_time: "20-30 minutes",
+        price_range: "\u20B9\u20B9",
+        address: "456, Church Street, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "2001",
+                item_name: "Whopper Burger",
+                price: "\u20B9250",
+                description: "Juicy beef patty with fresh veggies and sauces.",
+                available: true
+            },
+            {
+                item_id: "2002",
+                item_name: "French Fries",
+                price: "\u20B9100",
+                description: "Crispy golden fries.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "91011",
+        restaurant_name: "Pizza Hut",
+        cuisine: [
+            "Italian",
+            "Pizza"
+        ],
+        rating: 4.2,
+        delivery_time: "40-50 minutes",
+        price_range: "\u20B9\u20B9\u20B9",
+        address: "789, Bannerghatta Road, Bangalore, Karnataka",
+        is_open: false,
+        menu: [
+            {
+                item_id: "3001",
+                item_name: "Pepperoni Pizza",
+                price: "\u20B9600",
+                description: "Thin crust pizza topped with pepperoni and cheese.",
+                available: false
+            },
+            {
+                item_id: "3002",
+                item_name: "Cheese Burst Pizza",
+                price: "\u20B9750",
+                description: "Pizza with extra cheese in the crust.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "1213",
+        restaurant_name: "Tandoori Express",
+        cuisine: [
+            "Indian",
+            "North Indian"
+        ],
+        rating: 4.3,
+        delivery_time: "25-35 minutes",
+        price_range: "\u20B9\u20B9\u20B9",
+        address: "101, Richmond Road, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "4001",
+                item_name: "Tandoori Chicken",
+                price: "\u20B9300",
+                description: "Marinated chicken grilled to perfection.",
+                available: true
+            },
+            {
+                item_id: "4002",
+                item_name: "Naan",
+                price: "\u20B950",
+                description: "Soft, warm, and fluffy flatbread.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "1415",
+        restaurant_name: "Sushi World",
+        cuisine: [
+            "Japanese",
+            "Sushi"
+        ],
+        rating: 4.8,
+        delivery_time: "45-55 minutes",
+        price_range: "\u20B9\u20B9\u20B9",
+        address: "202, Ulsoor Road, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "5001",
+                item_name: "California Roll",
+                price: "\u20B9550",
+                description: "Crab, avocado, and cucumber in a sushi roll.",
+                available: true
+            },
+            {
+                item_id: "5002",
+                item_name: "Salmon Nigiri",
+                price: "\u20B9400",
+                description: "Fresh salmon on vinegared rice.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "1617",
+        restaurant_name: "Pasta House",
+        cuisine: [
+            "Italian",
+            "Pasta"
+        ],
+        rating: 4.1,
+        delivery_time: "30-40 minutes",
+        price_range: "\u20B9\u20B9\u20B9",
+        address: "303, Indiranagar, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "6001",
+                item_name: "Spaghetti Carbonara",
+                price: "\u20B9500",
+                description: "Classic Italian pasta with creamy sauce.",
+                available: true
+            },
+            {
+                item_id: "6002",
+                item_name: "Penne Arrabbiata",
+                price: "\u20B9450",
+                description: "Spicy pasta with tomato sauce and garlic.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "1819",
+        restaurant_name: "The Healthy Bowl",
+        cuisine: [
+            "Healthy",
+            "Salads",
+            "Vegan"
+        ],
+        rating: 4.7,
+        delivery_time: "20-30 minutes",
+        price_range: "\u20B9\u20B9",
+        address: "404, Koramangala, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "7001",
+                item_name: "Quinoa Salad",
+                price: "\u20B9350",
+                description: "A healthy mix of quinoa, veggies, and dressing.",
+                available: true
+            },
+            {
+                item_id: "7002",
+                item_name: "Acai Bowl",
+                price: "\u20B9400",
+                description: "Acai berries with fruits and granola.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "2021",
+        restaurant_name: "The Seafood Shack",
+        cuisine: [
+            "Seafood",
+            "Indian"
+        ],
+        rating: 4.4,
+        delivery_time: "30-45 minutes",
+        price_range: "\u20B9\u20B9\u20B9",
+        address: "505, Whitefield Road, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "8001",
+                item_name: "Fish Curry",
+                price: "\u20B9400",
+                description: "Traditional Indian fish curry with spices.",
+                available: true
+            },
+            {
+                item_id: "8002",
+                item_name: "Prawn Masala",
+                price: "\u20B9500",
+                description: "Succulent prawns cooked in a rich masala.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "2223",
+        restaurant_name: "Caf\xe9 Mocha",
+        cuisine: [
+            "Cafe",
+            "Italian",
+            "Beverages"
+        ],
+        rating: 4.0,
+        delivery_time: "15-25 minutes",
+        price_range: "\u20B9\u20B9",
+        address: "606, Jayanagar, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "9001",
+                item_name: "Cappuccino",
+                price: "\u20B9150",
+                description: "Classic Italian coffee with a creamy froth.",
+                available: true
+            },
+            {
+                item_id: "9002",
+                item_name: "Cheese Croissant",
+                price: "\u20B9120",
+                description: "Flaky croissant filled with cheese.",
+                available: true
+            }
+        ]
+    },
+    {
+        restaurant_id: "2425",
+        restaurant_name: "The Veggie Delight",
+        cuisine: [
+            "Vegetarian",
+            "Indian",
+            "Vegan"
+        ],
+        rating: 4.6,
+        delivery_time: "25-35 minutes",
+        price_range: "\u20B9\u20B9",
+        address: "707, BTM Layout, Bangalore, Karnataka",
+        is_open: true,
+        menu: [
+            {
+                item_id: "10001",
+                item_name: "Vegetable Biryani",
+                price: "\u20B9350",
+                description: "Aromatic biryani with mixed vegetables.",
+                available: true
+            },
+            {
+                item_id: "10002",
+                item_name: "Aloo Gobi",
+                price: "\u20B9220",
+                description: "Potatoes and cauliflower in a spiced gravy.",
+                available: true
+            }
+        ]
+    }
+];
+exports.default = Restaurants;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","dIizP","bB7Pu"], "bB7Pu", "parcelRequire94c2")
 
 //# sourceMappingURL=index.3d214d75.js.map
